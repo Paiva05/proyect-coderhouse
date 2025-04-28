@@ -1,7 +1,7 @@
 <h1 align="center">Hola 👋, soy Fabricio</h1>
 <h3 align="center">Un desarrollador web muy apasionado de Argentina</h3>
 
-<p>Estudio en coderhouse y disfruto programando. Mi pasion por el desarrollo web comenzó hace 4 años y hoy en día estoy cumpliendo mis objetivos buscando ser un desarrolador web de los mejores que hay</p>
+<p>Estudio en coderhouse y disfruto programando. Mi pasion por el desarrollo web comenzó hace 4 años y hoy en día estoy cumpliendo mis objetivos buscando ser un gran desarrolador web</p>
 
 - 🔭Actualmente trabajo en mi web **Airbag Fandom**
 
