@@ -5,7 +5,7 @@
 
 - 🔭Actualmente trabajo en mi web **Airbag Fandom**
 
-- 💬 Preguntame sobre **HTML, CSS, Bootstrap**
+- 💬 Preguntame sobre **HTML, CSS, SASS, Bootstrap**
 
 - 📫 Cómo contactarme **paiva05.set@gmail.com**
   
