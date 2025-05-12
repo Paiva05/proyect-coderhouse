@@ -1,0 +1,48 @@
+// Footer
+@use "../utilities/variables";
+
+footer {
+    background-color: variables.$layout-color;
+    color: variables.$white;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    display: flex;	
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    height: 10vh;
+
+    p {
+        color: variables.$color-font-footer;
+        font-size: 1rem;
+    }
+    div {
+        margin: 0 1rem;
+        padding: 0.2rem 0.5rem;
+
+        h4 {
+            color: #5c36f3;
+            font-size: 1.2rem
+        }
+        h4:hover {
+            animation: fadeInDown;
+            animation-duration: 2s;
+        }
+
+        ul{
+            list-style-type: none;
+
+            li{
+                margin: 0 1rem;
+                padding: 0.2rem 0.5rem;
+
+                a{
+                    text-decoration: none;
+                    color: variables.$color-font-footer;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

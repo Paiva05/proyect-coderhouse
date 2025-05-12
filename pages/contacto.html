@@ -6,7 +6,9 @@
     <!-- Título -->
     <title>Airbag Fandom</title>
     <!-- CSS -->
-     <link rel="stylesheet" href="../css/styles.css">
+     <link rel="stylesheet" href="../css/style.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
      <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,16 +31,16 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="novedades.html">Novedades</a>
+                            <a class="nav-link active" href="novedades.html">Novedades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="musica.html">Música</a>
+                            <a class="nav-link active" href="musica.html">Música</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">Galería</a>
+                            <a class="nav-link active"  href="galeria.html">Galería</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -49,10 +51,10 @@
     <!-- Intro -->
 
     <main class="main-contacto">
-        <h1 class="titulo-contacto">Contacto</h1>
-        <section class="contacto">   
-            <article class="intro-contacto">
-                <div class="texto-intro-contacto">
+        <h1 data-aos="fade-right" data-aos-duration="2000">Contacto</h1>
+        <section>   
+            <article data-aos="fade-right" data-aos-duration="2000">
+                <div>
                 <h2>¡Conéctate con la Comunidad de Fans de Airbag!</h2>
                 <p>¿Tienes alguna pregunta, comentario o simplemente quieres compartir tu amor por    Airbag? Esta es tu oportunidad para ponerte en contacto con nosotros. En esta página de contacto, puedes enviarnos tus mensajes, opiniones, fotos o historias que quieras compartir con otros fans.
                 
@@ -60,12 +62,12 @@
                 
                 ¡Esperamos tu mensaje! ¡Juntos, seguimos disfrutando de la música de Airbag!</p>
                 </div>
-                <img src="../media/contacto.webp" alt="Contacto" class="img-contacto">
+                <img src="../media/contacto.webp" alt="Contacto" data-aos="zoom-in-up" data-aos-duration="2000" class="img-contacto ">
             </article>
 
             <!-- Formulario -->
 
-            <div class="form-contacto">
+            <div class="form-contacto" data-aos="zoom-in-up" data-aos-duration="2000">
                 <form class="row g-3 needs-validation" novalidate>
                     <div class="col-md-4">
                         <label for="validationCustom01" class="form-label">Nombre</label>
@@ -154,9 +156,9 @@
     </main>
     <!-- Pié de página -->
     <footer>
-        <p class="footer-item">© 2025 Airbag Fandom. <br>
+        <p>© 2025 Airbag Fandom. <br>
             Todos los derechos reservados.</p>
-        <div class="footer-item">
+        <div>
         <h4>Redes de la banda</h4>
         <ul>
             <li><a href="https://www.facebook.com/airbagoficial" target="_blank">Facebook</a></li>
@@ -166,21 +168,21 @@
             <li><a href="https://open.spotify.com/intl-es/artist/1wKDGglKV4FsFS85r2Dmpr?si=y6MRcYiwQk-dooePxoQv2A&nd=1&dlsi=5d4db025b0c64346#login" target="_blank">Spotify</a></li>
         </ul>
         </div>
-        <div class="footer-item">
+        <div>
         <h4>Patricio Sardelli</h4>
         <ul>
             <li><a href="https://www.instagram.com/PatricioSardelli" target="_blank">Instagram</a></li>
             <li><a href="https://x.com/AIRBAGoficial?s=09" target="_blank">Twitter</a></li>
         </ul>
         </div>
-        <div class="footer-item">
+        <div>
         <h4>Guido Sardelli</h4>
         <ul>
             <li><a href="https://www.instagram.com/guidoarmido" target="_blank">Instagram</a></li>
             <li><a href="https://x.com/GuidoAIRBAG?s=09" target="_blank">Twitter</a></li>
         </ul>
         </div>
-        <div class="footer-item">
+        <div>
         <h4>Gastón Sardelli</h4>
         <ul>
             <li><a href="https://www.instagram.com/gastonsardelli" target="_blank">Instagram</a></li>
@@ -190,6 +192,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>

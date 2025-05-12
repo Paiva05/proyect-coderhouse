@@ -1,0 +1,31 @@
+// Galería
+@use "../utilities/variables";
+@use "../utilities/fonts";
+
+.main-galeria {
+    background-color: #130409;
+    h2 {
+        font-family: fonts.$big-shoulders-font;
+        color: variables.$white;
+        font-size: 2.5rem;
+        padding: 1.5rem;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    grid-auto-rows: 250px; 
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1); 
+    }
+    img:hover {
+        transform: scale(1.05); 
+    }
+}

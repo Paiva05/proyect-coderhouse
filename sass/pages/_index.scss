@@ -1,0 +1,71 @@
+// Index
+@use "../utilities/variables";
+@use "../utilities/fonts";
+@use "../utilities/mixins";
+
+.banner {
+    height: 50vh;
+    width: 100%;
+
+    img {
+        @include mixins.img-style(100%, 100%, cover);
+    }
+}
+.banner-texto {
+    color: variables.$white;
+    font-family: fonts.$tektur-font;
+    font-size: 1.5re;
+    padding: 1rem 5rem;
+
+    p{
+        padding: 1rem
+    }
+
+    h1 {
+        font-family: fonts.$tradewinds-font;
+        font-size: 2.5rem;
+        color: #7655c6;
+        display: block;
+    }
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #040d0f;
+}
+.contenido-index {
+    background-color: variables.$layout-color;
+    color: variables.$white;
+    font-family: fonts.$tektur-font;
+    font-size: 1.5rem;
+    padding: 2rem;
+
+    h3{
+        color: #b18fff;
+        font-family: fonts.$big-shoulders-font;
+        display: block;
+    }
+    div{
+        display: flex;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .intro {
+        flex-flow: row;
+    }
+    .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    
+    }
+    .banner {
+        height: 70vh;
+        min-width: 640px
+    }
+}

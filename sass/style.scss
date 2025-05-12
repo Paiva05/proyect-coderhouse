@@ -1,0 +1,15 @@
+// Layout
+@use "layout/footer";
+@use "layout/header";
+
+// Utilidades
+@use "utilities/variables";
+@use "utilities/reset";
+@use "utilities/fonts";
+
+// Páginas
+@use "pages/index";
+@use "pages/novedades";
+@use "pages/musica";
+@use "pages/galeria";
+@use "pages/contacto";

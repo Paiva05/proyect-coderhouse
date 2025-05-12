@@ -1,0 +1,81 @@
+// Novedades
+@use "../utilities/variables";
+@use "../utilities/fonts";
+
+.contenido-novedades {
+    color: variables.$white;
+    font-family: fonts.$tektur-font;
+    font-size: 2rem;
+    background-color: variables.$nov-color;
+
+    h1 {
+        font-family: fonts.$tradewinds-font;
+        font-size: 2.5rem;
+        color: variables.$nov-color-2;
+        padding: 3rem;
+    }
+    article {
+        padding: 1rem;
+
+        h2 {
+            color: #cfd5ff;
+            font-family: fonts.$big-shoulders-font;
+            font-size: 2.5rem;
+        }
+    }
+}
+.novedades-art {
+            background-color: variables.$nov-color-2;
+            color: variables.$white; 
+            font-size: 1.8rem;
+            font-family: fonts.$tektur-font;
+            padding: 2rem;
+            border-radius: variables.$borde-redondeado;
+}
+.novedades-art-2 {
+    @extend .novedades-art;
+    background-color: #21307b;
+
+
+    a {
+    color: variables.$white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    }
+}
+.ultimas-canciones {
+    max-width: 400px;
+}
+.section-2-nov {
+    background-color: variables.$nov-color;
+
+    div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr(max-height 450px));
+    gap: 3rem;
+    padding: 3rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section-2-nov div {
+        display: block;
+        padding: 0.2rem;
+    }
+    .novedades-art-2 {
+        margin: 2rem;
+    }
+    .novedades-art {
+        margin: 2rem;
+    }   
+    .section-2-nov article iframe{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-2-nov article iframe{
+        width: 250px;
+    }
+}

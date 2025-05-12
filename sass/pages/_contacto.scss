@@ -1,0 +1,85 @@
+// Contacto
+@use "../utilities/variables";
+@use "../utilities/fonts";
+@use "../utilities/mixins";
+
+.main-contacto {
+    background-color: variables.$background-color-mc;
+
+    h1 {
+        font-family: fonts.$tradewinds-font;
+        font-size: 3rem;
+        color: #892CDC;
+        padding: 1.5rem;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        color: variables.$white;
+        background-color: variables.$background-color-mc;
+        flex-flow: row;
+        justify-content: center;
+
+        article {
+            font-size: 2rem;
+            display: flex;
+            flex-flow: column;
+            max-width: 780px;
+            padding: 3rem;
+        }
+    }
+}
+
+.img-contacto {
+    height: 50vh;
+    width: 100%;
+    max-width: 600px;
+
+    img {
+        @include mixins.img-style(100%, 100%, cover);    
+    }
+}
+.form-contacto {
+    color: variables.$white;
+    font-family: fonts.$tektur-font;
+    font-size: 1.5rem;
+    border-radius: variables.$borde-redondeado;
+    padding: 3rem;
+
+    form {
+        background-color: #141832;
+        padding: 2rem;
+        border-radius: variables.$borde-redondeado;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main-contacto {
+        section {
+            article {
+                display: block;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .main-contacto {
+        section {
+            flex-flow: column;
+        }
+    }
+    .main-contacto {
+        section {
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+    .form-contacto {
+        padding: 1rem;
+
+        form {
+            padding: 1rem;
+        }
+    }
+}

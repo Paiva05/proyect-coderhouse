@@ -1,0 +1,16 @@
+// Reset CSS
+@use "../utilities/variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: 100%;
+    min-height: 100%;
+}
+html {
+    font-size: 62.5%;
+    background-color: variables.$layout-color;
+}

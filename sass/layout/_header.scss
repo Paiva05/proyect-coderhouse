@@ -1,0 +1,47 @@
+// Header
+@use "../utilities/variables";
+@use "../utilities/fonts";
+
+
+.navbar {
+    --bs-tertiary-bg-rgb: 27, 22, 28;
+}
+.navbar-toggler {
+    background-color: variables.$white !important;
+}
+.navbar-brand {
+    font-family: fonts.$nosifer-font;
+    --bs-navbar-brand-font-size: 2.5rem;
+    --bs-navbar-brand-color: #5c36f3;
+    padding: 1.5rem;
+}
+.nav-item {
+    margin: 0 1rem;
+    padding: 0.5rem 0.5rem;
+    font-family: fonts.$lexend-font;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.active {
+    --bs-navbar-active-color: #fff !important;
+}
+.nav-link {
+    --bs-nav-link-color: #fff !important;
+    --bs-nav-link-hover-color: 255 255 255 !important;
+}
+.nav-link:hover {
+    animation: zoomIn;
+    animation-duration: 1s;
+}
+
+@media screen and (max-width: 991px) {
+    .nav-link:hover {
+        animation: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar-brand {
+        --bs-navbar-brand-font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,88 @@
+// Música
+@use "../utilities/variables";
+@use "../utilities/fonts";
+
+.musica {
+    background-color: variables.$background-color-mc;
+}
+.section-canciones {
+    background-color: #051d21;
+
+    h2 {
+        font-family: fonts.$tradewinds-font;
+        font-size: 2.5rem;
+        color: variables.$color-sub-musica;
+        padding: 1.5rem;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+        iframe {
+            margin: 1rem;
+            border-radius: 12px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 320px;
+
+            a {
+                color: variables.$white;
+                font-size: 2.2rem;
+                text-transform: uppercase;
+            }
+            a:hover {
+                animation: zoomIn;
+                animation-duration: 1s;
+            }
+        }
+    }
+}
+
+.section-albumes {
+    background-color: #07262c;
+    
+    h2 {
+        font-family: fonts.$tradewinds-font;
+        font-size: 2.5rem;
+        color: variables.$color-sub-musica;
+        padding: 1.5rem;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        
+        iframe {
+            margin: 1rem;
+            border-radius: 12px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 320px;
+
+            a {
+                color: variables.$white;
+                font-size: 2.2rem;
+                text-transform: uppercase;
+            }
+            a:hover {
+                animation: zoomIn;
+                animation-duration: 1s;
+            }
+        }
+    }
+}
