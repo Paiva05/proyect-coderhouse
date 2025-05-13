@@ -115,11 +115,11 @@ html {
 .banner-texto {
   color: #fff;
   font-family: "Tektur", sans-serif;
-  font-size: 1.5re;
   padding: 1rem 5rem;
 }
 .banner-texto p {
   padding: 1rem;
+  font-size: 1.5rem;
 }
 .banner-texto h1 {
   font-family: "Trade winds", system-ui;
